@@ -1,17 +1,19 @@
-import junit.framework.*;
-
-public class JavaTest extends TestCase {
-   protected int value1, value2;
-   
-   // assigning the values
-   protected void setUp(){
-      value1 = 3;
-      value2 = 3;
-   }
-
-   // test method to add two values
-   public void testAdd(){
-      double result = value1 + value2;
-      assertTrue(result == 6);
-   }
-}
+public class AppTest {
+      @Test
+      @Category(com.mycompany.SlowTests.class)
+      public void testSlow() {
+        System.out.println("slow");
+      }
+ 
+      @Test
+      @Category(com.mycompany.SlowerTests.class)
+      public void testSlower() {
+        System.out.println("slower");
+      }
+ 
+      @Test
+      @Category(com.cmycompany.FastTests.class)
+      public void testSlow() {
+        System.out.println("fast");
+      }
+    }
