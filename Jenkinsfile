@@ -37,12 +37,12 @@ node {
 
    }
 
-   stage('Results') {
+  // stage('Results') {
 
-      junit '**/target/surefire-reports/TEST-*.xml'
+ //     junit '**/target/surefire-reports/TEST-*.xml'
 
-      archiveArtifacts 'target/*.jar'
-
-   }
-
+   //   archiveArtifacts 'target/*.jar'
+   stage('Deploy') {
+      deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://localhost:8090/')], contextPath: null, war: '**/*.war'
+    }
 }
