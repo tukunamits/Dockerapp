@@ -2,7 +2,7 @@ node {
 
    def mvnHome
 
-   stage('Preparation') { // for display purposes
+   stage('SCM Checkout') { // for display purposes
 
       // Get some code from a GitHub repository
 
