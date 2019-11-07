@@ -5,7 +5,7 @@
   <groupId>aa.ll</groupId>
   <artifactId>holiday</artifactId>
   <packaging>war</packaging>
-  <version>02.0</version>
+  <version>03.0</version>
   <name>maven2</name>
   <url>http://maven.apache.org</url>
   <distributionManagement>
