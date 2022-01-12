@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>aa.ll</groupId>
-  <artifactId>holiday</artifactId>
+  <artifactId>dockerapp</artifactId>
   <packaging>war</packaging>
   <version>03.0</version>
   <name>maven2</name>
