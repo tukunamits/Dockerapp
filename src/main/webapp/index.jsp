@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>
-<%= "Hello World!" %>
+<%= "Hello to devops" %> 
   </h1>
 </body>
 </html>
