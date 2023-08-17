@@ -1,4 +1,6 @@
-node{
+Pipeline
+{
+     agents any{
      stage('Scm checkout'){
           git 'https://github.com/tukunamits/Dockerapp.git'
      }
